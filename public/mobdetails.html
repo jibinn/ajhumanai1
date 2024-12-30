@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Development</title> 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="mainBody" id="start">
+    <div class="button-navigator">
+        
+       
+        
+        <div id="blob_container" style="position:fixed; width: 100vw; height: 100vh;top:0;left:0; background: rgb(255, 255, 255); z-index:-1;"></div>
+        <button class="back-button" style="float: right;position: relative;top: 38px;left: -47px;" onclick="window.history.back();">Back</button>
+<style>/* Back Button Styling */
+  .back-button {
+    float: left;
+    padding: 12px 30px;
+    background-color: #02343F;
+    color: #F0EDCC;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #F0EDCC;
+    color: #02343F;
+    transform: scale(1.05);
+  }
+  </style>
+        <section class="service-detail-section">
+          <div class="container">
+            <h2 class="service-title">Custom Software Development</h2>
+            <div class="service-detail-content">
+              <img src="./img/soft1.jpeg" alt="Custom Software Development" class="service-detail-img" />
+              <div class="service-info">
+                <p>
+                  Tailored solutions to meet your unique business needs. Our expert team specializes in developing 
+                  scalable and efficient software that aligns with your business objectives. Whether you need a 
+                  desktop application, a custom enterprise solution, or cloud-based software, we deliver exceptional results.
+                </p>
+                
+                <h3>Why Choose Us?</h3>
+                <ul>
+                  <li>Highly customized to your needs</li>
+                  <li>Scalable and robust solutions</li>
+                  <li>Cutting-edge technology integration</li>
+                  <li>24/7 support and maintenance</li>
+                </ul>
+      
+                <button class="contact-button">Contact Us for a Consultation</button>
+              </div>
+            </div>
+      
+            <!-- Marketing Strategy Section -->
+            <section class="marketing-strategy">
+              <h3>Our Approach to Your Success</h3>
+              <div class="marketing-grid">
+                <div class="marketing-item">
+                  <h4>Tailored Solutions</h4>
+                  <p>We develop software specifically for your business challenges, ensuring maximum efficiency and return on investment.</p>
+                </div>
+                <div class="marketing-item">
+                  <h4>Future-Proof Technology</h4>
+                  <p>Stay ahead with the latest tech trends like AI, machine learning, and cloud computing integrated into your solution.</p>
+                </div>
+                <div class="marketing-item">
+                  <h4>Expert Team</h4>
+                  <p>Our team is composed of skilled professionals who have a track record of delivering cutting-edge solutions on time.</p>
+                </div>
+              </div>
+            </section>
+      
+            <!-- Client Testimonials Section -->
+            <section class="testimonials">
+              <h3>What Our Clients Say</h3>
+              <div class="testimonials-grid">
+                <div class="testimonial-card">
+                  <p>"This team transformed our operations with a custom solution that completely streamlined our processes. Highly recommend!"</p>
+                  <h5>Jibin John, CEO of AJHumanAI</h5>
+                </div>
+                <div class="testimonial-card">
+                  <p>"The solution provided by this company was exactly what we needed. Professional, efficient, and top-notch quality."</p>
+                  <h5>Anandhu Suresh, Founder of AJHumanAI</h5>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <style>/* General Body Styles */
+          body {
+            font-family: 'Arial', sans-serif;
+            
+            color: #333;
+            margin: 0;
+            padding: 0;
+          }
+          
+          /* Navbar Styling */
+          .navbar {
+            background-color: #02343F;
+            padding: 15px 0;
+          }
+          
+          .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          .navbar .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #F0EDCC;
+            text-decoration: none;
+          }
+          
+          .navbar .nav-links {
+            list-style-type: none;
+          }
+          
+          .navbar .nav-links li {
+            display: inline;
+            margin-right: 20px;
+          }
+          
+          .navbar .nav-links li a {
+            color: #F0EDCC;
+            text-decoration: none;
+            font-size: 1.1rem;
+          }
+          
+          .navbar .nav-links li a:hover {
+            color: #02343F;
+          }
+          
+          /* Service Detail Section */
+          .service-detail-section {
+            padding: 80px 20px;
+          
+            color: #F0EDCC;
+            border-radius: 12px;
+          }
+          
+          .service-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+          
+          .service-detail-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+          }
+          
+          .service-detail-img {
+            width: 400px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+          }
+          
+          .service-info {
+            max-width: 600px;
+          }
+          
+          .service-info p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #F0EDCC;
+          }
+          
+          .service-info h3 {
+            font-size: 1.6rem;
+            margin-top: 20px;
+          }
+          
+          .service-info ul {
+            margin-top: 15px;
+            list-style-type: square;
+            padding-left: 20px;
+          }
+          
+          .service-info li {
+            font-size: 1.1rem;
+            color: #F0EDCC;
+          }
+          
+          .contact-button {
+            margin-top: 30px;
+            padding: 12px 30px;
+        
+            color: #02343F;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+          
+          .contact-button:hover {
+       
+            color: #F0EDCC;
+          }
+          
+          /* Marketing Strategy Section */
+          .marketing-strategy {
+            padding: 40px 20px;
+            margin-top: 60px;
+            color: #F0EDCC;
+            text-align: center;
+          }
+          
+          .marketing-strategy h3 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+          }
+          
+          .marketing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+          }
+          
+          .marketing-item h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          
+          .marketing-item p {
+            font-size: 1rem;
+          }
+          
+          /* Testimonials Section */
+          .testimonials {
+            margin-top: 60px;
+            padding: 40px 20px;
+           
+            text-align: center;
+          }
+          
+          .testimonials h3 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+          
+          .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+          }
+          
+          .testimonial-card {
+           
+            color: #F0EDCC;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+          }
+          
+          .testimonial-card p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+          }
+          
+          .testimonial-card h5 {
+            font-size: 1rem;
+            margin-top: 15px;
+            font-style: italic;
+          }
+          
+          /* Footer */
+          footer {
+            background-color: #02343F;
+            color: #F0EDCC;
+            padding: 20px 0;
+            text-align: center;
+          }
+          
+          footer p {
+            margin: 0;
+            font-size: 1rem;
+          }
+          </style>
+     
+    </div>
+        <div class="cursor">
+            <div class="cursor__inner cursor-circle"></div>
+            <div class="cursor__inner cursor-dot"></div>
+        </div>
+      
+        <div class="box box-topnav">
+            <div class="topnav" id="mytopnav">
+                <div class="logo" id="logo">
+                    <a href="#start"><img src="img/logoiaj_white-modified.png" alt="ilab logo"/></a>
+                </div>
+            </div>
+        </div>
+        <span class="edit_button_overlay"></span>
+        <iframe src="contact_form.html" id="contactframe" frameborder="0"></iframe>
+        <script src="js/cursor.js"></script>
+        <!-- script src="js/skew.js"></script -->
+        <!--script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/draggabilly.pkgd.min.js"></script>
+        <script src="js/portfolio.js"></script-->
+        <script>
+            // Preload all the images in the page
+            //imagesLoaded(document.querySelectorAll('.img-inner'), {background: true}, () => document.body.classList.remove('loading'));
+        </script>        
+        <script>
+            $("#mail").on("click", function(){
+                if(typeof fbq == "function"){
+                    fbq('track', 'Contact');
+                }
+            });
+        </script>
+    </body>
+</html>
