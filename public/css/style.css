@@ -26,21 +26,21 @@ body {
     -moz-osx-font-smoothing: grayscale;
     padding: 0;
     margin: 0;
-    background-color:#fff;
-    color:#000;
+    background-color:#02343F;
+    color:#02343F ;
     position:relative;
     transition:background 0.3s linear , color 0.3s linear ;
 }
 
 .mainBody.animated {
-    background-color:#000;
-    color:#fff;
+    background-color:#02343F;
+    color:#F0EDCC ;
 }
 body a {
-    color: #000;
+    color: #F0EDCC;
 }
 body.animated a {
-    color: #fff;
+    color: #02343F;
 }
 #mytopnav a{
     display: inline-block;
@@ -76,10 +76,10 @@ body.animated .logo_placeholder img{
 
 body #blob_container{
     transition:background-color 0.3s linear;
-    background-color:#fff !important;
+    background-color:#F0EDCC !important;
 }
 body.animated #blob_container {
-    background-color:#000 !important;
+    background-color:#02343F !important;
 }
 
 body.body_blu #blob_container {
