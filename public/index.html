@@ -48,7 +48,10 @@
     <body class="mainBody" id="start">
     <div class="button-navigator">
         
-       
+      <div class="cursor">
+        <div class="cursor__inner cursor-circle"></div>
+        <div class="cursor__inner cursor-dot"></div>
+    </div>
         
         <div id="blob_container" style="position:fixed; width: 100vw; height: 100vh;top:0;left:0; background: white; z-index:-1;"></div>
         
@@ -73,8 +76,85 @@
               </div>
           </div>
       </section>
-      
+      <style>/* Section Styling */
+     
+        
+        /* Glowing Animation */
+        @keyframes glowText {
+            0% {
+                text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+            }
+            100% {
+                text-shadow: 0 0 20px #9a00ff, 0 0 30px #9a00ff;
+            }
+        }
+        
+        /* Company Description */
+        .company-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: center;
+            color: #d9d9d9;
+            margin: 15px auto;
+            max-width: 800px;
+            background: rgba(30, 30, 30, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .company-description:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Company Mission */
+        .company-mission {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+            color: #00eaff;
+            margin-top: 30px;
+            background: rgba(20, 20, 20, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .company-mission:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #intro {
+                font-size: 2.2rem;
+            }
+        
+            .company-description,
+            .company-mission {
+                font-size: 1rem;
+            }
+        }
+        </style>
+      <section>    
         <div class="container">
+            <div class="box box-header">
+               
+                <p class="company-description"><br><br><br><br><br><br>
+                    At <strong>AJ Human Ai</strong>, we specialize in delivering innovative IT solutions that drive growth, efficiency, and transformation. 
+                    Our expertise spans across AI, IT innovation, and tailored technological solutions designed to meet the unique needs of businesses. 
+                    From advanced AI systems to robust IT infrastructures, we are dedicated to empowering organizations with smart, scalable, and secure solutions.<br><br><br><br><br><br>
+                </p>
+                
+            </div>
+        </div>
+    </section>
+    
+        <!-- <div class="container">
             <span class="delegato" id="delegato-testo-1"></span>
             <div class="box box-pres" id="text1">
                 <p>
@@ -118,53 +198,62 @@
                   <span>technology.</span>
                 </p>
             </div>
-        </div>
+        </div> -->
         </section>    
         <section>
             <div class="container">
                 <section class="services-section">
                   <h2 class="section-title">Our Services</h2>
                   <div class="services-grid">
+                    <a href="./custom-software-development.html" style="text-decoration:none;">
                     <div class="service-card">
                       <img src="./img/soft1.jpeg" alt="Custom Software Development" />
                       <h3>Custom Software Development</h3>
                       <p>Tailored solutions to meet your unique business needs.</p>
-                    </div>
+                    </div></a>
+                    <a href="./mobdetails.html" style="text-decoration:none;">
                     <div class="service-card">
                       <img src="./img/phone.jpeg" alt="Mobile App Development" />
                       <h3>Mobile App Development</h3>
                       <p>Feature-rich apps for iOS and Android platforms.</p>
-                    </div>
+                    </div></a>
+                    <a href="./webdetails.html" style="text-decoration:none;">
                     <div class="service-card">
                       <img src="img/web.jpeg" alt="Web Development" />
                       <h3>Web Development</h3>
                       <p>Responsive, fast, and SEO-friendly websites.</p>
-                    </div>
+                    </div></a>
+                    <a href="./aidetails.html" style="text-decoration:none;">
                     <div class="service-card">
                       <img src="img/ai.jpeg" alt="AI & Machine Learning" />
                       <h3>AI & Machine Learning</h3>
                       <p>Innovative AI solutions for smarter business operations.</p>
                     </div>
+                  </a>
+                  <a href="./cyber.html" style="text-decoration:none;">
                     <div class="service-card">
                       <img src="img/cyber.jpeg" alt="Cybersecurity Solutions" />
                       <h3>Cybersecurity Solutions</h3>
                       <p>Protecting your digital assets with robust security measures.</p>
-                    </div>
+                    </div></a>
+                    <a href="./datadetails.html" style="text-decoration:none;">
                     <div class="service-card">
                       <img src="img/data.jpeg" alt="Data Analytics" />
                       <h3>Data Analytics</h3>
                       <p>Transforming data into actionable insights.</p>
-                    </div>
+                    </div></a>
+                    <a href="./collage.html" style="text-decoration:none;">
                     <div class="service-card">
                       <img src="img/stud.jpeg" alt="Academic Project Solutions" />
                       <h3>Academic Project Solutions</h3>
                       <p>Guidance and support for technical projects.</p>
-                    </div>
+                    </div></a>
+                    <a href="./ecomdetails.html" style="text-decoration:none;">
                     <div class="service-card">
                       <img src="img/ecom.jpeg" alt="E-commerce Development" />
                       <h3>E-commerce Development</h3>
                       <p>Building seamless online shopping experiences.</p>
-                    </div>
+                    </div></a>
                     <!-- <div class="service-card">
                       <img src="img/it.jpeg" alt="IT Consulting" />
                       <h3>IT Consulting</h3>
@@ -206,7 +295,7 @@
         
         /* Service Card Styling */
         .service-card {
-          background: #FFFFFF; /* White background for cards */
+          background: rgba(30, 30, 30, 0.6); /* White background for cards */
           border-radius: 12px;
           text-align: center;
           padding: 30px 20px;
@@ -250,7 +339,7 @@
           .service-card h3 {
             font-size: 1.4rem;
             font-weight: 600;
-            color: #02343F; /* Dark color for title */
+            color: #f0edcc; /* Dark color for title */
             margin-bottom: 12px;
           }
           
@@ -352,6 +441,429 @@
               </div>
             </div>
           </section>
+          <section class="about-section">
+            <div class="about-content">
+                <h2 class="about-title">About <span>Our Vision</span></h2>
+                <p class="about-description">
+                    At <strong>AJHumanAI</strong>, we are committed to pioneering innovation and excellence. With a focus on futuristic technologies and user-centric solutions, we bridge the gap between imagination and reality. Our mission is to empower businesses with advanced tools and strategies for a smarter, more connected world.
+                </p>
+                <ul class="about-highlights">
+                    <li><strong>Innovation-Driven:</strong> Always pushing technological boundaries.</li>
+                    <li><strong> Global Reach:</strong> Solutions for a connected world.</li>
+                    <li><strong>Secure Solutions:</strong> Prioritizing trust and data security.</li>
+                </ul>
+                <a href="#services"  style="border-radius: 21px;"class="about-btn">Discover Our Services</a>
+            </div>
+            <div class="about-image">
+                <img src="./img/about.jpeg" alt="Futuristic Design" />
+            </div>
+        </section>
+        <!-- <section>
+        <footer class="footer">
+          <div class="footer-container">
+              <div class="footer-about">
+                  <h3>About Us</h3>
+                  <p>
+                      We deliver innovative solutions with a futuristic approach to drive success and create lasting value for our clients.
+                  </p>
+              </div>
+              <div class="footer-links">
+                  <h3>Quick Links</h3>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="footer-services">
+                  <h3>Our Services</h3>
+                  <ul>
+                      <li><a href="#">Web Development</a></li>
+                      <li><a href="#">AI Solutions</a></li>
+                      <li><a href="#">Mobile App Development</a></li>
+                      <li><a href="#">Cybersecurity</a></li>
+                  </ul>
+              </div>
+              <div class="footer-contact">
+                  <h3>Contact Us</h3>
+                  <p>Email: info@example.com</p>
+                  <p>Phone: +1 234 567 890</p>
+                  <div class="footer-social">
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+          </div>
+      </footer></section> -->
+<style>/* Footer General Styling */
+  .footer {
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      color: #ffffff;
+      font-size: 0.9rem;
+      padding: 50px 20px 10px;
+      margin-top: 50px;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .footer::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.05));
+      z-index: 1;
+  }
+  
+  /* Footer Container */
+  .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      z-index: 2;
+      position: relative;
+  }
+  
+  /* Footer Sections */
+  .footer-about,
+  .footer-links,
+  .footer-services,
+  .footer-contact {
+      flex: 1 1 250px;
+      min-width: 200px;
+  }
+  
+  .footer h3 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #4facfe;
+      display: inline-block;
+      padding-bottom: 5px;
+      letter-spacing: 1px;
+  }
+  
+  .footer p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      color: #dfe6e9;
+  }
+  
+  /* Footer Links and Lists */
+  .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .footer ul li {
+      margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+      text-decoration: none;
+      color: #dfe6e9;
+      font-size: 0.95rem;
+      transition: color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+  }
+  
+  .footer ul li a:hover {
+      color: #4facfe;
+      transform: translateX(5px);
+  }
+  
+  /* Footer Social Media */
+  .footer-social {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+  }
+  
+  .footer-social a {
+      color: #ffffff;
+      font-size: 1.3rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+      color: #4facfe;
+      transform: scale(1.2);
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.85rem;
+      color: #dfe6e9;
+  }
+  
+  /* Footer Background Effects */
+  .footer::after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(79, 172, 254, 0.4) 0%, transparent 70%);
+      z-index: 0;
+      pointer-events: none;
+      animation: floatingEffect 6s infinite alternate ease-in-out;
+  }
+  
+  @keyframes floatingEffect {
+      from {
+          transform: translateY(0);
+      }
+      to {
+          transform: translateY(-20px);
+      }
+  }
+  
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+      .footer-container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+  
+      .footer-about,
+      .footer-links,
+      .footer-services,
+      .footer-contact {
+          margin-bottom: 20px;
+      }
+  
+      .footer-social {
+          justify-content: center;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .footer h3 {
+          font-size: 1.1rem;
+      }
+  
+      .footer p,
+      .footer ul li a {
+          font-size: 0.85rem;
+      }
+  
+      .footer-social a {
+          font-size: 1rem;
+      }
+  }
+  </style>      
+<style>/* General Styling for About Section */
+  .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #0f2027, #203a43e0, #2c536400);
+      color: #ffffff;
+      padding: 80px 50px;
+      border-radius: 12px;
+      overflow: hidden;
+      gap: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect for Entire Section */
+  .about-section:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      transform: translateY(-3px);
+  }
+  
+  /* Text Content */
+  .about-content {
+      flex: 1 1 50%;
+      max-width: 600px;
+      text-align: left;
+      animation: fadeInLeft 1s ease-in-out;
+  }
+  
+  .about-title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #ffffff;
+      letter-spacing: 1px;
+      background: linear-gradient(90deg, #fcf1df, #0c3741);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .about-title span {
+      font-weight: 800;
+      color: #ffffff;
+  }
+  
+  .about-description {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 25px;
+      color: #dfe6e9;
+      letter-spacing: 0.5px;
+  }
+  
+  /* Highlights */
+  .about-highlights {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+  }
+  
+  .about-highlights li {
+      font-size: 1rem;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.3s ease;
+  }
+  
+  .about-highlights li:hover {
+      transform: translateX(5px);
+      color: #e8e8e8;
+  }
+  
+  /* Call to Action Button */
+  .about-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 1rem;
+      color: #ffffff;
+      background: linear-gradient(90deg, #f0edcc, #f0edcc);
+      border-radius: 30px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(245, 245, 245, 0.5);
+      background: linear-gradient(90deg, #f0edcc, #f0edcc);
+  }
+  
+  /* Image Section */
+  .about-image {
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeInRight 1s ease-in-out;
+  }
+  
+  .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+  }
+  
+  .about-image img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Animations */
+  @keyframes fadeInLeft {
+      0% {
+          opacity: 0;
+          transform: translateX(-50px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+  
+  @keyframes fadeInRight {
+      0% {
+          opacity: 0;
+          transform: translateX(50px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+      .about-section {
+          flex-direction: column;
+          text-align: center;
+          padding: 60px 30px;
+      }
+  
+      .about-content {
+          max-width: 100%;
+      }
+  
+      .about-title {
+          font-size: 2.5rem;
+      }
+  
+      .about-description {
+          font-size: 1rem;
+      }
+  
+      .about-btn {
+          font-size: 0.95rem;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .about-title {
+          font-size: 2.2rem;
+      }
+  
+      .about-description {
+          font-size: 0.95rem;
+      }
+  
+      .about-btn {
+          font-size: 0.9rem;
+          padding: 10px 25px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .about-title {
+          font-size: 2rem;
+      }
+  
+      .about-btn {
+          font-size: 0.85rem;
+          padding: 8px 20px;
+      }
+  }
+  </style>        
          <style>/* General Styling for Why Choose Us Section */
             .why-choose-us {
               padding: 90px 20px;
