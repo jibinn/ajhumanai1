@@ -454,10 +454,10 @@ p {
     animation: rotation-back 12s infinite linear;
 }
 .mainBody.animated .edit_button_pencil{
-    background-image:url('../img/pencil_white.png');
+    background-image:url('../img/telephone.png');
 }
 .mainBody.animated .edit_button_text:before{
-    background-image:url('../img/text_white.png');
+    background-image:url('../img/Ajcircle.png');
 }
 .edit_button:hover .edit_button_text:before{
     -webkit-animation: rotation-back 1s infinite linear;
@@ -484,10 +484,10 @@ p {
 }
 
 .mainBody .edit_button:hover .edit_button_pencil{
-    background-image:url('../img/pencil_white.png');
+    background-image:url('../img/telephone.png');
 }
 .mainBody.animated .edit_button:hover .edit_button_pencil{
-    background-image:url('../img/pencil_black.png') !important;
+    background-image:url('../img/telephone.png') !important;
 }
 .mainBody.animated .edit_button:hover .edit_button_point{
     background-color:#fff;
@@ -776,7 +776,7 @@ iframe.animated{
     margin-left:auto;
 }
 .close_form_back, .close_form_top{
-    background-image:url(../img/1.png);
+    background-image:url(../img/Ajcircle.png);
     background-size:100% 100%;
     background-repeat:no-repeat;
     background-position: center center;
