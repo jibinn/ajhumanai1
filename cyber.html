@@ -93,7 +93,27 @@
                     <li>Compliance with global security standards</li>
                 </ul>
     
-                <button class="contact-button">Contact Us for a Consultation</button>
+                    <a href="https://wa.me/353894364542"
+                   class="contact-button whatsapp-button" 
+                   target="_blank">
+                   Chat with Us on WhatsApp
+                </a>
+                <style>.whatsapp-button {
+                  background-color: #25D366; /* WhatsApp Green */
+                  color: white;
+                  text-align: center;
+                  padding: 10px 20px;
+                  border-radius: 5px;
+                  text-decoration: none;
+                  font-weight: bold;
+                  display: inline-block;
+                  transition: background-color 0.3s;
+              }
+              
+              .whatsapp-button:hover {
+                  background-color: #1EBEA5; /* Slightly darker green on hover */
+              }
+              </style>
             </div>
         </div>
     
@@ -132,7 +152,15 @@
         </section>
     </div>
     </section>
-    
+    <div class="bottom_nav">
+      <div id="edit_button" class="edit_button" onclick="return gtag_report_conversion_eb();">
+      <!-- div id="edit_button" class="edit_button" -->
+          <span class="edit_button_point"></span>
+          <span class="edit_button_text"></span>
+          <span class="edit_button_pencil"></span>
+      </div>
+  </div>
+  <span class="edit_button_overlay"></span>
         <style>/* General Body Styles */
           body {
             font-family: 'Arial', sans-serif;
